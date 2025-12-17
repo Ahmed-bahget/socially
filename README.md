@@ -33,7 +33,7 @@ A full-featured social media application built with modern web technologies. Thi
 
 | Layer | Technology |
 |-------|------------|
-| **Frontend** | Next.js 15, React 18, TypeScript |
+| **Frontend** | Next.js 16, React 18, TypeScript |
 | **Styling** | Tailwind CSS, Shadcn UI |
 | **Backend** | Next.js Server Actions, Prisma ORM |
 | **Database** | PostgreSQL |
@@ -105,12 +105,12 @@ npm run dev
 
 ### Environment Variables
 ```env
+# Database
+DATABASE_URL=postgresql://postgres:postgres@localhost:5432/social_dev
+
 # Clerk Authentication
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_key
 CLERK_SECRET_KEY=your_secret
-
-# Database
-DATABASE_URL=your_postgresql_connection_string
 
 # UploadThing
 UPLOADTHING_SECRET=your_secret
@@ -134,6 +134,15 @@ Enforced strict TypeScript throughout the codebase, eliminating runtime errors a
 ### 5. Performance Optimization
 Applied database indexing, pagination, and connection pooling to achieve sub-second page loads even with complex data relationships.
 
+## 🔒 Security Updates
+- **Next.js 16.0.10**: Updated to the latest secure version to address CVE-2025-66478
+- **Dependency Updates**: All packages updated to latest secure versions
+- **Vulnerability Fixes**: Resolved all high-severity vulnerabilities
+
+## ⚙️ Build Configuration
+- **Webpack**: Using webpack instead of Turbopack for better compatibility with UploadThing
+- **Production Ready**: Optimized build configuration for deployment
+
 ## 📈 Performance Metrics
 - Initial page load: < 1.5s
 - Post creation feedback: Instant
@@ -142,9 +151,26 @@ Applied database indexing, pagination, and connection pooling to achieve sub-sec
 
 ## 🔄 Deployment
 ```bash
-# Build for production
+# Build for production (using webpack)
 npm run build
 
 # Start production server
 npm start
 ```
+
+## 📝 Future Enhancements
+- [ ] Dark mode toggle
+- [ ] Advanced search functionality
+- [ ] Direct messaging system
+- [ ] Analytics dashboard
+- [ ] Mobile app with React Native
+
+## 🤝 Contributing
+This is a personal project demonstrating full-stack development skills. Feel free to fork and experiment with the code.
+
+## 📄 License
+This project is for demonstration purposes only.
+
+---
+
+**Built with ❤️ using Next.js 16 and modern web technologies**
