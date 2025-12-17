@@ -148,20 +148,3 @@ npm run build
 # Start production server
 npm start
 ```
-
-## 📝 Future Enhancements
-- [ ] Dark mode toggle
-- [ ] Advanced search functionality
-- [ ] Direct messaging system
-- [ ] Analytics dashboard
-- [ ] Mobile app with React Native
-
-## 🤝 Contributing
-This is a personal project demonstrating full-stack development skills. Feel free to fork and experiment with the code.
-
-## 📄 License
-This project is for demonstration purposes only.
-
----
-
-**Built with ❤️ using Next.js 15 and modern web technologies**
