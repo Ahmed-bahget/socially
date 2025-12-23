@@ -1,5 +1,5 @@
 # Social Media Platform
-
+🚀 **Live Demo:** https://socially-theta-beige.vercel.app/
 A full-featured social media application built with modern web technologies. This project demonstrates advanced Next.js development skills with a focus on performance optimization, real-time interactions, and clean architecture.
 
 ## 🚀 Key Features
